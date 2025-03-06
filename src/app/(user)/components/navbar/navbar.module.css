@@ -1,0 +1,148 @@
+.container{
+    position:absolute;
+    height:100vh;
+    overflow-y:scroll ;
+    overflow-x:hidden;
+    width:300px;
+}
+.logoCon{
+    width:30px;
+    height:30px;
+    position:relative;
+    bottom:60px
+    
+}
+.top{
+    width:300px;
+    height:320px;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+    position:relative;
+    flex-direction:column;
+    color:white;
+background-image: linear-gradient(-225deg, #363036 0%, #19242b 100%);
+}
+.text1 , .text2{
+font-weight: 600;
+font-size:18px;
+position:relative;
+bottom:40px
+}
+.text1{
+    letter-spacing:1px;
+    text-transform:capitalize;
+}
+.text2{
+    font-size:10px;
+}
+.card{
+    height:230px;
+    width:240px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position:absolute;
+    bottom:-150px;
+    border-radius:20px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    padding: 20px 0;
+    color:rgb(83, 80, 80);
+    font-weight:700;
+}
+.navImg{
+    width:80px;
+    height:80px;
+    position:relative;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+}
+.username{
+    font-size:18px;
+    margin-top:10px;
+}
+.role{
+    font-size:12px;
+    opacity:0.5
+}
+.hr{
+    height: 3px;
+    width:80%;
+    opacity:0.54;
+    margin:20px auto;
+}
+.logoImg{
+    border-radius: 50%;
+    object-fit: cover;
+}
+.stats{
+    display:flex;
+    width:80%;
+    justify-content: space-around;
+}
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.statValue{
+    font-size:20px;
+    font-weight: 700;
+    opacity:0.8;
+}
+.statName{
+    opacity:0.6;
+    font-size:12px;
+}
+.bottom{
+    display:flex;
+    flex-wrap:wrap;
+    background-color:var(--chat-background);
+    width:100%;
+    height:500px;
+    justify-content: center;
+}
+.linksWithIcon{
+    display: flex;
+    flex-wrap:wrap;
+    margin-top:180px;
+    width:80%;
+    
+
+}
+.linkCon{
+width:40%;
+margin:20px auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+color:rgb(0,0,0,0.5);
+gap:15px;
+text-transform:capitalize;
+
+text-decoration:none;
+}
+.linkCon:hover{
+    color: blueviolet;
+}
+.icon{
+    font-size: 25px;
+}
+
+
+   .container::-webkit-scrollbar {
+      width: 10px;
+    }
+
+   .container::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 10px;
+      border: 3px solid #f1f1f1;
+      opacity: 0.2;
+    }
+
+   .container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }

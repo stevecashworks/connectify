@@ -1,0 +1,178 @@
+.container{
+  width:100%;
+  min-height:100vh;
+  background-image: url("/batman.jpg");
+  position:absolute;
+  top:0;
+  z-index:1; 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  overflow-y: hidden;
+
+}
+
+.content{
+ display:flex;
+ height:500px;
+ width:800px;
+ position:relative;
+ /* bottom:40px; */
+ border-radius:30px;
+ background-color: red;
+}
+.intro{
+flex:1;
+background-color: var(--brand-color);
+height:100%;
+ box-sizing:border-box;
+ padding:100px 0px 100px 40px;
+ display:flex;
+ flex-direction:column;
+ gap:20px;
+}
+.formCon{
+  flex:1;
+height:100%;
+padding:0;
+  background-color:rgb(255,255,255);
+  color:rgb(0,0,0,0.6);
+  display: flex;
+  flex-direction:column;
+  gap:20px;
+  box-sizing:border-box;
+  width:100%;
+  align-items: center;
+  justify-content:center;
+  padding-top:50px;
+  
+}
+.welcome{
+  font-size:30px;
+}
+.feature{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+.iconCon{
+  width:50px;
+  height: 50px;
+  border-radius: 5px;
+  border:1px solid white;
+  font-size:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.logoCon{
+  width:50px;
+  height:50px;
+  display:flex;
+  margin:0;
+  position:relative;
+  margin-top:50px;
+  
+}
+
+.form{
+  margin-top:50px;
+  display:flex;
+  gap:20px; 
+  position:relative;
+  width:350px;
+  box-sizing: border-box;
+  height:500px;
+  overflow-x: hidden;
+  /* padding-top:320px; */
+  
+}
+
+.inputContainer{
+width:350px;
+height:35px;
+border:1px solid rgb(0,0,0,0.2);
+border-radius: 8px;
+display:flex;
+align-items:center;
+box-sizing:border-box;
+padding-left: 5px;
+gap:15px;
+
+}
+
+.section{
+  position:absolute;
+  width:300px;
+  left:0;
+  top:0;
+  display: flex;
+  flex-direction:column;
+  gap:20px;
+  transform:translateX(350px);
+  transition:all 0.8s ease;
+  /* transform:translateX(250px); */
+
+}
+
+.input{
+  width:100%;
+  height: 100%;
+  border:none;
+  outline:none;
+}
+.buttons{
+  width:100%;
+  display:flex;
+}
+
+.buttons>button{
+  color:white;
+  background-color:var(--brand-color);
+  padding:10px 12px;
+  border:none;
+  margin:10px ;
+  display:flex;
+  align-items:center;
+  font-weight:bold;
+  
+}
+
+.section.sectionActive{
+  transform : translateX(0) 
+
+}
+.link{
+  text-decoration: none;
+  font-size: 12px;
+  color:blueviolet;
+  font-weight: bold;
+}
+@media(max-width:900px){
+.content{
+  flex-direction:column-reverse;
+  height:1000px
+}
+
+.section{
+  top:300px;
+  margin:auto;
+}
+.formCon{
+  height:1000px;
+  position:relative;
+  top:100px;
+  padding:20px
+
+}
+.logoCon{
+  width:40px;
+  height: 40px;
+  position: relative;
+  top:300px;
+
+}
+
+}
